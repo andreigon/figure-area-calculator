@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+<body>
+ 
+
+<h1 class="header">Калькулятор площади геометрически правильной Фигуры</h1>
+<div class="data-input">
+    <input id="corners"  name="corners" type="number" size="40"  placeholder="Количество Углов Фигуры">
+    <input id="perimetr" name="perimetr" type="number" size="40"  placeholder="Периметр Фигуры">
+    <button id="clearButton" type="reset">Очистить</button>
+    <button id="calcButton" type="button">Рассчитать</button>
+</div>
+
+<h1 id="data-title" ></h1>
+<div id="data-show">
+    <div id="figure_triangle"></div>
+    <div id="figure_square"></div>
+    <div id="figure_pentagon"></div>
+    <div id="figure_hexagon"></div>
+    <div id="figure_heptagon"></div>
+    <div id="figure_octagon"></div>
+    
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+body{
+    background: #d4d4d4;
+}
+.header{
+    color: rgb(0, 0, 0);
+    display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 800px; */
+    align-items: center;
+    justify-content: center;
+}
+
+#data-title{
+    display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 800px; */
+    align-items: center;
+    justify-content: center;
+}
+
+#corners{
+    min-width: 300px;
+    margin: 15px;
+    border-radius: 20px;
+    justify-content: center;
+}
+#perimetr{
+    min-width: 300px;
+    margin: 15px;
+    border-radius: 20px;
+}
+
+#clearButton{
+    margin: 15px;
+    border-radius: 20px;
+}
+#calcButton{
+    margin: 15px;
+    border-radius: 20px;
+}
+
+.data-input{
+    display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 800px; */
+    align-items: center;
+    justify-content: center;
+}
+
+#data-show{
+    display: flex;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+    align-items: center;
+    justify-content: center;
+}
+/* треугольник */
+#figure_triangle{
+    display: none;
+    width: 0px;
+    height: 0px;
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    border-bottom: 130px solid #c212b3;
+    /* background: aquamarine; */
+}
+/* квадрат */
+#figure_square{
+    display: none;
+    width: 130px;
+    height: 130px;
+    /* color: brown; */
+    background: rgb(184, 13, 184);
+}
+/* пятиугольник */
+#figure_pentagon{
+    display: none;
+}
+#figure_pentagon::before {
+    content: "";
+    display: block;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 60px solid #c212b3;
+}
+#figure_pentagon::after {
+    content: "";
+    display: block;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 70px solid #c212b3;}
+
+
+/* шестиугольник */
+#figure_hexagon{
+    display: none;
+}
+#figure_hexagon::before{
+    content: "";
+    display: block;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 70px solid #c212b3;
+    width: 100px;
+}
+
+#figure_hexagon::after{
+    content: "";
+    display: block;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 70px solid #c212b3;
+}
+/* семиугольник */
+
+#figure_heptagon{
+    display: none;
+    width: 140px;
+    height: 140px;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    background: #c212b3;
+}
+
+/* восьмиугольник */
+#figure_octagon {
+    display: none;
+    width: 149px;
+    height: 149px;
+    background: #c212b3;
+    position: relative;
+    content: "";
+}
+
+#figure_octagon:before {
+    content: "";
+    width: 63px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 43.5px solid #c212b3;
+    border-left: 43.5px solid #d4d4d4;
+    border-right: 43.5px solid #d4d4d4;
+}
+
+#figure_octagon:after {
+    content: "";
+    width: 63px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 43.5px solid #c212b3;
+    border-left: 43.5px solid #d4d4d4;
+    border-right: 43.5px solid #d4d4d4;
+}    
+
+/* .figure_octagon::after{
+    display: block;
+    width: 200px;
+    height: 200x;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 250px solid #c212b3;
+} */
+/* .figure_octagon::before{
+     
+        content: "";
+        width: 100px;
+        height: 0;
+        position: ;
+        top: 0;
+        left: 0;
+        border-bottom: 29px solid red;
+        border-left: 29px solid #eee;
+        border-right: 29px solid #eee;
+}
+.figure_octagon::after {
+        content: "";
+        width: 100px;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 29px solid red;
+        border-left: 29px solid #eee;
+        border-right: 29px solid #eee;
+      } */
